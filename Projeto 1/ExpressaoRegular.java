@@ -1,8 +1,8 @@
 public class ExpressaoRegular {
 	public static void main(String[] args) {
-		String cpf = "\\d{3}.\\d{3}.\\d{3}-\\d{2}",
-		       num = "\\d{4}-\\d{4}|\\d{5}-\\d{4}",
-		       pla = "[A-Z]{3}-\\d{4}";
+		String cpf = "\\d{3}\\.\\d{3}\\.\\d{3}\\-\\d{2}",
+		       num = "\\d{4}\\-\\d{4}|\\d{5}\\-\\d{4}",
+		       pla = "[A-Z]{3}\\-\\d{4}";
 
 		String[] s = new String[10];
 
