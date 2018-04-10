@@ -4,7 +4,7 @@ public class ExpressaoRegular {
 		       num = "\\d{4}-\\d{4}|\\d{5}-\\d{4}",
 		       pla = "[A-Z]{3}-\\d{4}";
 
-        String[] s = new String[7];
+		String[] s = new String[7];
 
 		/*
 		s[0] = "701.563.548-48";
