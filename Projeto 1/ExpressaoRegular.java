@@ -1,7 +1,10 @@
 public class ExpressaoRegular {
 	public static void main(String[] args) {
-		String[] s = new String[7];
-		String cpf, num, pla, cond;
+		String cpf = "\\d{3}.\\d{3}.\\d{3}-\\d{2}",
+		       num = "\\d{4}-\\d{4}|\\d{5}-\\d{4}",
+		       pla = "[A-Z]{3}-\\d{4}";
+
+        String[] s = new String[7];
 
 		/*
 		s[0] = "701.563.548-48";
@@ -13,14 +16,8 @@ public class ExpressaoRegular {
 		s[6] = "RRS-448";
 		*/
 
-		cpf = "\\d{3}.\\d{3}.\\d{3}-\\d{2}";
-		num = "\\d{4}-\\d{4}|\\d{5}-\\d{4}";
-		pla = "[A-Z]{3}-\\d{4}";
-
-		cond = cpf + "|" + num + "|" + pla;
-
 		for(String o : s)
-			if(o.matches(cond))
+			if(o.matches(cpf + "|" + num + "|" + pla))
 				System.out.println(o + ": Accepetd.\n");
 			else
 				System.out.println(o + ": Rejected.\n");
