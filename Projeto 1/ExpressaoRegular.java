@@ -19,7 +19,7 @@ public class ExpressaoRegular {
 
 		for(String o : s)
 			if(o.matches(cpf + "|" + num + "|" + pla))
-				System.out.println(o + ": Accepetd.");
+				System.out.println(o + ": Accepted.");
 			else
 				System.out.println(o + ": Rejected.");
 	}
